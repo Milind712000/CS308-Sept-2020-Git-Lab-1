@@ -16,9 +16,23 @@ int main(int argc, char* argv[]) {
 		printf("Usage: sqrt input\n\n");
 		exit(-1);
 	}
+	
+	int value;
+	int n;
+	char ch;
 
-	int input = atoi(argv[1]);
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	n = sscanf(argv[1], "%d%c", &value, &ch);
+
+	if (n != 1) {
+		/* sscanf didn't find a number to convert, so it wasn't a number */
+		printf("invalid argument. argument should be a number\n");
+		exit(-1);
+	}
+	else {
+	/* It was */
+	}
+
+	printf("Sqrt of %d is %f\n",value,sqrt(value));
 	printf("End of program. Exiting.\n");
 	return(0);
 
