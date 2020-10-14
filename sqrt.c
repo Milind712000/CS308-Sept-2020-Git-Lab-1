@@ -34,10 +34,10 @@ int main(int argc, char* argv[]) {
 
 	if(value < 0){
 		value *= -1;
-		printf("The number is negative\n");
-		printf("Sqrt of %d is %fi\n",value,sqrt(value));
+		printf("NEGSUPPORT: The number is negative\n");
+		printf("NEGSUPPORT: Sqrt of %d is %fi\n",value,sqrt(value));
 	}else{
-		printf("Sqrt of %d is %f\n",value,sqrt(value));
+		printf("NEGSUPPORT: Sqrt of %d is %f\n",value,sqrt(value));
 	}
 
 	printf("End of program. Exiting.\n");
