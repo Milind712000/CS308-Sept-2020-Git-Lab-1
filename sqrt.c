@@ -32,8 +32,8 @@ int main(int argc, char* argv[]) {
 	/* It was */
 	}
 
-	printf("Sqrt of %d is %f\n",value,sqrt(value));
-	printf("End of program. Exiting.\n");
+	printf("Sqrt conflict of %d is %f\n",value,sqrt(value));
+	printf("End of program. conflict Exiting.\n");
 	return(0);
 
 } // end main
